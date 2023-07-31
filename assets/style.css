@@ -1,0 +1,43 @@
+* {
+    font-family: 'Inter',sans-serif;
+}
+#users {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 520px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px ;
+}
+img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+.label {
+    line-height: 1.2;
+    margin-top: 20px;
+}
+body {
+    background-color: transparent;
+}
+@media only screen and (max-width :600px) {
+    #users {
+        grid-template-columns: 1fr;
+        width: 400px;
+        height: 300px;
+    }
+    .label {
+       text-align: center;
+
+    }
+    img {
+        margin: auto;
+    }
+}
+h3 {
+    color: #00abf0;
+}
